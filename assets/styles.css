@@ -27,10 +27,41 @@ ul {
  list-style: none;
 }
 
+#about{
+    color: #7c8c94
+}
+
 .me {
     height: 20em;
     width: auto;
     border-radius: 50%;
+}
+
+button.btn {
+    background-color: #b3b5be;
+}
+
+button.btn:hover {
+    background-color: #97bed0 !important
+}
+
+#resume {
+    background-color: #7c8c94;
+    color:#3c4e43
+}
+
+#resume h3 {
+    border-bottom: solid #97bed0;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+#resume h3, h4, h6 {
+    color:black;
+}
+
+#resume hr {
+    color:#97bed0
 }
 
 #work {
