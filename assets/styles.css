@@ -19,7 +19,7 @@ i {
 }
 
 i:hover {
-    color:darkolivegreen;
+    color:#535c55;
     
 }
 
@@ -31,4 +31,32 @@ ul {
     height: 20em;
     width: auto;
     border-radius: 50%;
+}
+
+#work {
+    background-color: #3c4e43;
+}
+
+#contact {
+    color: #7c8c94;
+    padding: 3em
+}
+
+#contact i {
+    color: #7c8c94;
+}
+
+#email {
+    text-decoration: none;
+    color: #b3b5be;
+    font-weight: bold;
+}
+
+#email:hover{
+    color:#97bed0;
+}
+
+
+footer {
+    height: 80px;
 }
