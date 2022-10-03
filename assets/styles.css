@@ -45,6 +45,8 @@ button.btn:hover {
     background-color: #97bed0 !important
 }
 
+
+
 #resume {
     background-color: #7c8c94;
     color:#3c4e43
@@ -66,6 +68,26 @@ button.btn:hover {
 
 #work {
     background-color: #3c4e43;
+}
+
+div.project a img{
+    border-radius: 10px;
+}
+
+div.project a:hover {
+    opacity: 0.5;
+}
+
+div.modal-content {
+    color:#3c4e43;
+}
+
+a.btn.btn-secondary {
+    background-color: #97bed0;
+}
+
+a.btn.btn-secondary:hover {
+    background-color: aqua !important
 }
 
 #contact {
@@ -90,4 +112,5 @@ button.btn:hover {
 
 footer {
     height: 80px;
+    background-color: #b3b5be;
 }

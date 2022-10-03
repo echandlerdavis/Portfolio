@@ -12,7 +12,7 @@
 <body>
     <header id="header-background">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,7 +61,6 @@
             </div>
           </div>
         </div>
-        <!-- Background image -->
       </header>
     <main class="bg-dark">
         <section id="about" class="container-fluid p-5">
@@ -80,7 +79,7 @@
                         <li>(949)439-4592</li>
                         <li>echandlerdavis@gmail.com</li>
                     </ul>
-                    <button class="btn"><i class="fa fa-download"></i>Download Resume</button>
+                    <!-- <button class="btn"><i class="fa fa-download"></i>Download Resume</button> -->
                 </div>
             </div>
 
@@ -159,53 +158,160 @@
             <h2 class="text-center p-4">Projects</h2>
             <div class="container-fluid"></div>
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-10 p-2">
-                        <a href="#modal" data-bs-toggle="modal" data-bs-target="#modal">
+                    <div class="project col-10 col-md-3 m-2">
+                        <a href="#pawsomepetfinder" data-bs-toggle="modal" data-bs-target="#pawsomepetfinder">
                             <img class="img-fluid" src="./assets/images/PetfinderProject.png" alt="Pawsome Petfinder Homepage">
                         </a>
                     </div>
-                    <div class="col-10 p-2 col-md-4">
-                            <a href="#modal" data-bs-toggle="modal" data-bs-target="#modal">
+                    <div class="project col-10 col-md-3 m-2">
+                        <a href="#notetaker" data-bs-toggle="modal" data-bs-target="#notetaker">
                             <img class="img-fluid" src="./assets/images/NoteTaker.png" alt="Note Taker App">
-                            </a>
-                    </div>
-                    <div class="col-10 p-2 col-md-4">
-                        <a href="#modal" data-bs-toggle="modal" data-bs-target="#modal">
-                        <img class="img-fluid" class="img-fluid"src="./assets/images/WorkDayScheduler.png" alt="Scheduler">
                         </a>
                     </div>
-                    <div class="col-10 p-2">
-                        <a href="#modal" data-bs-toggle="modal" data-bs-target="#modal">
+                    <div class="project col-10 col-md-3 m-2">
+                        <a href="#dibs" data-bs-toggle="modal" data-bs-target="#dibs">
+                            <img class="img-fluid" src="./assets/images/Dibs.png" alt="Dibs Homepage">
+                        </a>
+                    </div>
+                    <div class="project col-10 col-md-3 m-2">
+                        <a href="#scheduler" data-bs-toggle="modal" data-bs-target="#scheduler">
+                            <img class="img-fluid" class="img-fluid"src="./assets/images/WorkDayScheduler.png" alt="Scheduler">
+                        </a>
+                    </div>
+                    <div class="project col-10 col-md-3 m-2">
+                        <a href="#recipesaver" data-bs-toggle="modal" data-bs-target="#recipesaver">
                         <img class="img-fluid" src="./assets/images/RecipeSaver.png" alt="Recipe Saver Homepage">
-                        </a>
-                    </div>
-                    <div class="col-10 p-2">
-                        <a href="#modal" data-bs-toggle="modal" data-bs-target="#modal">
-                        <img class="img-fluid" class="img-fluid"src="" alt="Scheduler">
                         </a>
                     </div>
                 </div>
 
                 <!-- Modals -->
-                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <!-- Petfinder Modal -->
+                <div class="modal fade" id="pawsomepetfinder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+                      <div class="modal-content bg-light d-flex">
+                        <div class="modal-header justify-content-center">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Pawsome Petfinder</h5>
+                          <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
                         </div>
-                        <div class="modal-body">
-                          ...
+                        <div class="modal-body d-flex flex-column">
+                          <img src="./assets/images/PetfinderProject.png" class="img-fluid" alt="Petfinder Project">
+                          <p class="pt-3">Application that uses multiple third-party APIs to search and find nearby animal shelters.</p>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="modal-footer d-flex justify-content-center">
+                          <a href="https://echandlerdavis.github.io/Pawsome-Petfinder/" target="_blank" type="button" class="btn btn-secondary" data-dismiss="modal">Try it out!</a>
+                          <a href="https://github.com/echandlerdavis/Pawsome-Petfinder" target="_blank" type="button" class="btn btn-secondary">View Github</a>
+                          <a type="button" class="btn btn-secondary" id="btnclose" data-bs-dismiss="modal">Close</a>
                         </div>
                       </div>
                     </div>
                   </div>
+                <!-- NoteTaker Modal -->
+                <div class="modal fade" id="notetaker" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light d-flex">
+                        <div class="modal-header justify-content-center">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Note Taker</h5>
+                          <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column">
+                          <img src="./assets/images/NoteTaker.png" class="img-fluid" alt="NoteTaker App">
+                          <p class="pt-3">A simple, convenient application for taking notes and saving them to local storage.</p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                          <a href="https://evening-ravine-54411.herokuapp.com/notes" target="_blank" type="button" class="btn btn-secondary" data-dismiss="modal">Try it out!</a>
+                          <a href="https://github.com/echandlerdavis/Note_Taker_App/" target="_blank" type="button" class="btn btn-secondary">View Github</a>
+                          <a type="button" class="btn btn-secondary" id="btnclose" data-bs-dismiss="modal">Close</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Dibs Modal -->
+                <div class="modal fade" id="dibs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light d-flex">
+                        <div class="modal-header justify-content-center">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Dibs</h5>
+                          <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column">
+                          <img src="./assets/images/Dibs.png" class="img-fluid" alt="Dibs Homepage">
+                          <p class="pt-3">A social platform where users can post items they wish to give away for free, and other users can like and comment using their own personal profile. Uses full Mern Stack and Graph QL.</p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                          <a href="https://the-real-dibs.herokuapp.com/" target="_blank" type="button" class="btn btn-secondary" data-dismiss="modal">Try it out!</a>
+                          <a href="https://github.com/cefaust/DIbs" target="_blank" type="button" class="btn btn-secondary">View Github</a>
+                          <a type="button" class="btn btn-secondary" id="btnclose" data-bs-dismiss="modal">Close</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- WorkDay Scheduler -->
+                <div class="modal fade" id="scheduler" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light d-flex">
+                        <div class="modal-header justify-content-center">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Work Day Scheduler</h5>
+                          <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column">
+                          <img src="./assets/images/WorkDayScheduler.png" class="img-fluid" alt="Work Day Scheduler Homepage">
+                          <p class="pt-3">A simple application that allows you to add events to your schedule, and shows you what has and has not passed using Moment.js</p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                          <a href="https://the-real-dibs.herokuapp.com/" target="_blank" type="button" class="btn btn-secondary" data-dismiss="modal">Try it out!</a>
+                          <a href="https://github.com/cefaust/DIbs" target="_blank" type="button" class="btn btn-secondary">View Github</a>
+                          <a type="button" class="btn btn-secondary" id="btnclose" data-bs-dismiss="modal">Close</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Recipe Saver -->
+                <div class="modal fade" id="recipesaver" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-light d-flex">
+                        <div class="modal-header justify-content-center">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Recipe Saver</h5>
+                          <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column">
+                          <img src="./assets/images/RecipeSaver.png" class="img-fluid" alt="Recipe Saver Homepage">
+                          <p class="pt-3">An application where you can write and save recipes to your own personal profile. Uses MySQL database configuration, sequelize, handlebars and Bulma Library for functionality and UI design.</p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                          <a href="https://group-2-recipe-saver.herokuapp.com/" target="_blank" type="button" class="btn btn-secondary" data-dismiss="modal">Try it out!</a>
+                          <a href="https://github.com/echandlerdavis/Recipe-Saver" target="_blank" type="button" class="btn btn-secondary">View Github</a>
+                          <a type="button" class="btn btn-secondary" id="btnclose" data-bs-dismiss="modal">Close</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
                   <!-- End of Modals -->
         </section>
         <section id="contact" class="container-fluid text-center">
@@ -229,7 +335,7 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="p-5">
         <div class="container text-center">
             <ul class="row justify-content-center">
                 <li class="col-1">
